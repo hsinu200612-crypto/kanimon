@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 285">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-family: KozGoPr6N-Regular-90ms-RKSJ-H, 'Kozuka Gothic Pr6N';
+        font-size: 161.87px;
+      }
+    </style>
+  </defs>
+  <g id="_企画" data-name="企画">
+    <circle class="cls-1" cx="142.5" cy="142.5" r="142.5"/>
+    <text class="cls-2" transform="translate(54.77 199.13) scale(1.05 1)"><tspan x="0" y="0">▲</tspan></text>
+  </g>
+</svg>

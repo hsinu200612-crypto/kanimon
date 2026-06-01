@@ -1,0 +1,903 @@
+@charset "utf-8";
+
+/*body*/
+body{
+    font-family: "Mochiy Pop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2vw;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+div{
+    display: block;
+}
+a,
+a:visited,
+a:link{
+    color: #000;
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+/*header*/
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    background-color: #fff;
+    box-shadow: 0 5px 5px #00000070;
+}
+.logo{
+    height: 100%;
+}
+.nav{
+    width: 40%;
+}
+.nav{
+    margin: auto 0;
+}
+.nav_list{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+#drawer_input{
+    display: none;
+}
+.nav_content h1{
+    display: none;
+}
+
+/*header2*/
+#samune{
+    position: relative;
+    background: #47d7ff;
+    overflow: hidden;
+    z-index: 0;
+    margin-bottom: 10%;
+    width: 100%;
+    height: 50svh;
+}
+#samune h1{
+    position: relative;
+    width: 50vw;
+    margin: 0 auto;
+    top: calc(50% - 60%);
+    z-index: 10;
+    animation: slide-in2 1s 2s both;
+}
+#samune ul{
+    display: flex;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    bottom: calc(50% - 60%);
+}
+#samune ul li{
+    position: relative;
+    width: 50vw;
+}
+.gosu{
+    z-index: 2;
+    animation: slide-in 1s 0.2s both;
+}
+.pati{
+    z-index: 1;
+    animation: slide-in 0.7s ;
+}
+.ran{
+    z-index: 5;
+    animation: slide-in 1s 1.2s both;
+}
+.hu{
+    z-index: 4;
+    animation: slide-in 1s 0.6s both;
+}
+.ten{
+    z-index: 4;
+    animation: slide-in 1s 0.8s both;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes slide-in2 {
+  0% {
+    transform: translateY(-200%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+/*main*/
+/*#setumei*/
+#setumei{
+    height: 100svh;
+}
+#setumei h2{
+    text-align: center;
+    margin: 0;
+}
+#setumei h2 span{
+    color: red;
+}
+
+#setumei .setumei_naka{
+    display: flex;
+    margin: auto;
+}
+#setumei .setumei_naka h3{
+    margin: auto 5%;
+}
+
+#setumei .setumei_naka .setumei_txt{
+    line-height: 1.5;
+}
+#setumei .setumei_txt{
+    margin: auto;
+}
+#setumei .setumei_txt p{
+    width: 100%;
+}
+
+/*syurui*/
+#syurui{
+    margin-bottom: 10%;
+    background-color: #fff;
+}
+#syurui h2{
+    text-align: center;
+    margin: 0;
+}
+#syurui h2 span{
+    color: red;
+}
+.syurui2{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.syurui2 .kanitati{
+    text-align: center;
+    width: 25%;
+    margin: auto;
+    padding: 1%;
+    transition: transform 0.2s;
+}
+.syurui2 .kanitati h3{
+    margin: 0;
+}
+.syurui2 .kanitati:hover{
+    transform: translateY(-5px);
+}
+#syurui .btn{
+    position: relative;
+    margin: 3% auto 0;
+    text-align: center;
+    display: block;
+    color: #fff;
+    background-color: red;
+    padding: 1%;
+    width: 30%;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+#syurui .btn:hover{
+    transform: translateY(-10px);
+}
+
+/*osirase*/
+#osirase{
+    background: #ff9898;
+    padding: 5%;
+}
+#osirase h2{
+    text-align: center;
+    margin-bottom: 5%;
+}
+#osirase dl{
+    margin: 0 10% 0 15%;
+}
+#osirase dt{
+    font-weight: bold;
+}
+#osirase dd{
+    margin: 1% 0 2%;
+}
+.osirase_naka{
+    border-bottom: 0.5vw dotted #000;
+    margin-bottom: 3%;
+}
+#osirase a{
+    text-decoration: underline 3px;
+}
+
+/*footer*/
+footer{
+    background: #000;
+    padding: 1% 0;
+    text-align: center;
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1vw;
+}
+
+/*list*/
+.list h1{
+    text-align: center;
+}
+.kanizukan{
+    margin: 5% 1%;
+}
+.kanizukan ul{
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.kanizukan li{
+    text-align: center;
+    margin: 1%;
+    width: 20%;
+}
+
+.kanizukan img{
+    padding: 1%;
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    border: solid #00000044 1px;
+}
+
+.kanizukan p{
+    margin: 0;
+}
+.kanizukan img:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 5px #00000044;
+}
+
+/*list_syosai*/
+.zukan_syosai{
+    display: flex;
+    margin: 0 auto;
+}
+.zukan_syosai h1{
+    width: 30%;
+    margin-left: auto;
+    margin-right: 10%;
+}
+.zukan_syosai2{
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+/*zukan_btn*/
+.zukan_btn{
+    display: flex;
+    justify-content: space-around;
+}
+.zukan_btn p{
+    background-color: red;
+    padding: 1%;
+    border-radius: 1vw;
+}
+.zukan_btn a{
+    color: #fff;
+}
+.zukan_btn p:hover{
+    opacity: 0.7;
+}
+
+/*ステータス*/
+.status{
+    display: flex;
+    margin: 5% auto;
+}
+table{
+    border: solid #00000044 2px;
+    border-radius: 10px;
+    padding: 0.5%;
+    margin: 0 2.5%;
+    width: 80%;
+}
+.tokutyo th,
+.tokutyo td{
+    border: solid #00000044 1px;
+}
+th{
+    padding: 3%;
+}
+td{
+    text-align: center;
+}
+
+/*かにらん*/
+.zukan_kaniran .zukan_syosai{
+    background-color: #ff9b9b;
+}
+/*攻撃*/
+.kaniran .a-1, .kaniran .a-2, .kaniran .a-3{
+    background-color: red;
+}
+.kaniran .a-4, .kaniran .a-5, .kaniran .a-6{
+    background-color: darkgray;
+}
+/*防御*/
+.kaniran .b-1, .kaniran .b-2, .kaniran .b-3{
+    background-color: red;
+}
+.kaniran .b-4, .kaniran .b-5, .kaniran .b-6{
+    background-color: darkgray;
+}
+/*速さ*/
+.kaniran .s-1, .kaniran .s-2, .kaniran .s-3{
+    background-color: red;
+}
+.kaniran .s-4, .kaniran .s-5, .kaniran .s-6{
+    background-color: darkgray;
+}
+
+/*カニゴス*/
+.zukan_kanigosu .zukan_syosai{
+    background-color: #a6cdff;
+}
+/*攻撃*/
+.kanigosu .a-1, .kanigosu .a-2, .kanigosu .a-3, .kanigosu .a-4, .kanigosu .a-5{
+    background-color: red;
+}
+.kanigosu .a-6{
+    background-color: darkgray;
+}
+/*防御*/
+.kanigosu .b-1, .kanigosu .b-2{
+    background-color: red;
+}
+.kanigosu .b-3, .kanigosu .b-4, .kanigosu .b-5, .kanigosu .b-6{
+    background-color: darkgray;
+}
+/*速さ*/
+.kanigosu .s-1, .kanigosu .s-2{
+    background-color: red;
+}
+.kanigosu .s-3, .kanigosu .s-4, .kanigosu .s-5, .kanigosu .s-6{
+    background-color: darkgray;
+}
+
+/*カニぱち*/
+.zukan_kanipati .zukan_syosai{
+    background-color: #fbffce;
+}
+/*攻撃*/
+.kanipati .a-1{
+    background-color: red;
+}
+.kanipati .a-2, .kanipati .a-3, .kanipati .a-4, .kanipati .a-5, .kanipati .a-6{
+    background-color: darkgray;
+}
+/*防御*/
+.kanipati .b-1{
+    background-color: red;
+}
+.kanipati .b-2, .kanipati .b-3, .kanipati .b-4, .kanipati .b-5, .kanipati .b-6{
+    background-color: darkgray;
+}
+/*速さ*/
+.kanipati .s-1, .kanipati .s-2, .kanipati .s-3, .kanipati .s-4, .kanipati .s-5, .kanipati .s-6{
+    background-color: red;
+}
+
+/*カニーフ*/
+.zukan_kanihu .zukan_syosai{
+    background-color: #9fff9f;
+}
+/*攻撃*/
+.kanihu .a-1, .kanihu .a-2{
+    background-color: red;
+}
+.kanihu .a-3, .kanihu .a-4, .kanihu .a-5, .kanihu .a-6{
+    background-color: darkgray;
+}
+/*防御*/
+.kanihu .b-1, .kanihu .b-2, .kanihu .b-3, .kanihu .b-4, .kanihu .b-5{
+    background-color: red;
+}
+.kanihu .b-6{
+    background-color: darkgray;
+}
+/*速さ*/
+.kanihu .s-1{
+    background-color: red;
+}
+.kanihu .s-2, .kanihu .s-3, .kanihu .s-4, .kanihu .s-5, .kanihu .s-6{
+    background-color: darkgray;
+}
+
+/*虚無ガニ*/
+.zukan_kyomukani .zukan_syosai{
+    background-color: #ececec;
+}
+/*攻撃*/
+.kyomukani .a-1, .kyomukani .a-2, .kyomukani .a-3, .kyomukani .a-4, .kyomukani .a-5, .kyomukani .a-6{
+    background-color: darkgray;
+}
+/*防御*/
+.kyomukani .b-1, .kyomukani .b-2, .kyomukani .b-3, .kyomukani .b-4, .kyomukani .b-5, .kyomukani .b-6{
+    background-color: darkgray;
+}
+/*速さ*/
+.kyomukani .s-1, .kyomukani .s-2, .kyomukani .s-3, .kyomukani .s-4, .kyomukani .s-5, .kyomukani .s-6{
+    background-color: darkgray;
+}
+
+/*ばけかに*/
+.zukan_bakekani .zukan_syosai{
+    background-color: #C70005;
+}
+/*攻撃*/
+.bakekani .a-1, .bakekani .a-2, .bakekani .a-3{
+    background-color: red;
+}
+.bakekani .a-4, .bakekani .a-5, .bakekani .a-6{
+    background-color: darkgray;
+}
+/*速さ*/
+.bakekani .s-1, .bakekani .s-2{
+    background-color: red;
+}
+.bakekani .s-3, .bakekani .s-4, .bakekani .s-5, .bakekani .s-6{
+    background-color: darkgray;
+}
+
+/*カニ子*/
+.zukan_kaniko .zukan_syosai{
+    background-color: #ff2bd1;
+}
+/*攻撃*/
+.kaniko .a-1, .kaniko .a-2, .kaniko .a-3, .kaniko .a-4, .kaniko .a-5{
+    background-color: red;
+}
+.kaniko .a-6{
+    background-color: darkgray;
+}
+/*防御*/
+.kaniko .b-1, .kaniko .b-2, .kaniko .b-3, .kaniko .b-4, .kaniko .b-5, .kaniko .b-6{
+    background-color: darkgray;
+}
+/*速さ*/
+.kaniko .s-1, .kaniko .s-2, .kaniko .s-3, .kaniko .s-4{
+    background-color: red;
+}
+.kaniko .s-5, .kaniko .s-6{
+    background-color: darkgray;
+}
+
+/*カニ天*/
+.zukan_kaniten .zukan_syosai{
+    background-color: #ffad69;
+}
+/*攻撃*/
+.kaniten .a-1, .kaniten .a-2, .kaniten .a-3, .kaniten .a-4{
+    background-color: red;
+}
+.kaniten .a-5, .kaniten .a-6{
+    background-color: darkgray;
+}
+/*防御*/
+.kaniten .b-1, .kaniten .b-2, .kaniten .b-3{
+    background-color: red;
+}
+.kaniten .b-4, .kaniten .b-5, .kaniten .b-6{
+    background-color: darkgray;
+}
+/*速さ*/
+.kaniten .s-1, .kaniten .s-2, .kaniten .s-3, .kaniten .s-4, .kaniten .s-5{
+    background-color: red;
+}
+.kaniten .s-6{
+    background-color: darkgray;
+}
+
+/*カニデヴァー*/
+.zukan_hikani .zukan_syosai{
+    background-color: #ff2a00c1;
+}
+/*攻撃*/
+.hikani .a-1, .hikani .a-2, .hikani .a-3, .hikani .a-4, .hikani .a-5{
+    background-color: red;
+}
+.hikani .a-6{
+    background-color: darkgray;
+}
+/*防御*/
+.hikani .b-1, .hikani .b-2{
+    background-color: red;
+}
+.hikani .b-3, .hikani .b-4, .hikani .b-5, .hikani .b-6{
+    background-color: darkgray;
+}
+/*速さ*/
+.hikani .s-1, .hikani .s-2{
+    background-color: red;
+}
+.hikani .s-3, .hikani .s-4, .hikani .s-5, .hikani .s-6{
+    background-color: darkgray;
+}
+
+/*魔ガニ*/
+.zukan_makani .zukan_syosai{
+    background-color: #9e7cdc;
+}
+/*攻撃*/
+.makani .a-1, .makani .a-2, .makani .a-3, .makani .a-4, .makani .a-5, .makani .a-6{
+    background-color: red;
+}
+/*防御*/
+.makani .b-1, .makani .b-2, .makani .b-3{
+    background-color: red;
+}
+.makani .b-4, .makani .b-5, .makani .b-6{
+    background-color: darkgray;
+}
+/*速さ*/
+.makani .s-1, .makani .s-2{
+    background-color: red;
+}
+.makani .s-3, .makani .s-4, .makani .s-5, .makani .s-6{
+    background-color: darkgray;
+}
+
+/*ちびカニ*/
+.zukan_tibikani .zukan_syosai{
+    background-color: #b5c8ff;
+}
+/*攻撃*/
+.tibikani .a-1{
+    background-color: red;
+}
+.tibikani .a-2, .tibikani .a-3, .tibikani .a-4, .tibikani .a-5, .tibikani .a-6{
+    background-color: darkgray;
+}
+/*防御*/
+.tibikani .b-1{
+    background-color: red;
+}
+.tibikani .b-2, .tibikani .b-3, .tibikani .b-4, .tibikani .b-5, .tibikani .b-6{
+    background-color: darkgray;
+}
+/*速さ*/
+.tibikani .s-1, .tibikani .s-2, .tibikani .s-3{
+    background-color: red;
+}
+.tibikani .s-4, .tibikani .s-5, .tibikani .s-6{
+    background-color: darkgray;
+}
+
+/*カニエレキ*/
+.zukan_ereki .zukan_syosai{
+    background-color: #a9fff8;
+}
+/*攻撃*/
+.ereki .a-1, .ereki .a-2, .ereki .a-3{
+    background-color: red;
+}
+.ereki .a-4, .ereki .a-5, .ereki .a-6{
+    background-color: darkgray;
+}
+/*防御*/
+.ereki .b-1, .ereki .b-2{
+    background-color: red;
+}
+.ereki .b-3, .ereki .b-4, .ereki .b-5, .ereki .b-6{
+    background-color: darkgray;
+}
+/*速さ*/
+.ereki .s-1, .ereki .s-2, .ereki .s-3, .ereki .s-4, .ereki .s-5, .ereki .s-6{
+    background-color: red;
+}
+
+/*contact*/
+.contact h2{
+    text-align: center;
+}
+.form{
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.contact dl{
+    position: relative;
+    margin: 0 auto;
+}
+.contact dl dt{
+    float: left;
+    padding: 0;
+}
+.contact dl dd{
+    padding: 0;
+    margin: 2em 0 2em 15em;
+}
+.contact dl dt .must{
+    background-color: red;
+    color: #fff;
+}
+.contact p{
+    text-align: center;
+}
+.contact p button{
+    padding: 1% 5%;
+    background-color: #999999;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5vw;
+}
+
+@media(max-width:768px){
+    /*body*/
+    body{
+        font-size: 4vw;
+    }
+
+    /*header*/
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        background: #fff;
+    }
+
+    /*footer*/
+    footer{
+        font-size: 3vw;
+    }
+
+    /* ここから下がハンバーガーメニューに関するCSS */
+  
+    /* チェックボックスを非表示にする */
+    .drawer_hidden {
+        display: none;
+    }
+        
+    /* ハンバーガーアイコンの設置スペース */
+    .logo{
+        width: 50%;
+        margin: 5% 0;
+    }
+    .nav{
+        justify-content: right;
+    }
+    .drawer_open {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: right;
+        align-items: center;
+        position: relative;
+        z-index: 100;/* 重なり順を一番上にする */
+        cursor: pointer;
+    }
+
+    /* ハンバーガーメニューのアイコン */
+    .drawer_open span,
+    .drawer_open span:before,
+    .drawer_open span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background: #333;
+    transition: 0.5s;
+    position: absolute;
+    }
+
+    /* 三本線の一番上の棒の位置調整 */
+    .drawer_open span:before {
+    bottom: 8px;
+    }
+
+    /* 三本線の一番下の棒の位置調整 */
+    .drawer_open span:after {
+    top: 8px;
+    }
+
+    /* アイコンがクリックされたら真ん中の線を透明にする */
+    #drawer_input:checked ~ .drawer_open span {
+        background: rgba(255, 255, 255, 0);
+    }
+
+    /* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+    #drawer_input:checked ~ .drawer_open span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+
+    #drawer_input:checked ~ .drawer_open span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    
+    /* メニューのデザイン*/
+    .nav_content {
+        width: 100svw;
+        height: 100svh;
+        position: fixed;
+        top: 0;
+        left: 100%; /* メニューを画面の外に飛ばす */
+        z-index: 99;
+        background: #fff;
+        transition: .5s;
+    }
+
+    /* メニュー黒ポチを消す */
+    .nav_list {
+        display: block;
+        justify-content: start;
+        list-style: none;
+        height: 100%;
+    }
+
+    /*リストのデザイン*/
+    .nav_content h1{
+        display: block;
+        margin: 15% 10% 0 10%;
+    }
+    .nav_list li{
+        font-size: 8vw;
+        align-content: center;
+        margin: 20% 5%;
+        border: 5px solid #000;
+        border-radius: 10px;
+        box-shadow: 1px 3px 5px #000;
+    }
+
+    .nav_list a{
+        display: inline-block;
+        width: 100%;
+        margin: 5% auto;
+    }
+
+    /* アイコンがクリックされたらメニューを表示 */
+    #drawer_input:checked ~ .nav_content {
+    left: 0;/* メニューを画面に入れる */
+    }
+
+    #samune h1{
+        width: 70vw;
+        top: 50%;
+        animation: slide-in2 1s 2s both;
+    }
+    #samune ul li{
+        width: 100vw;
+    }
+    .gosu{
+        bottom: -5%;
+        left: -20%;
+        z-index: 2;
+        animation: slide-in 1s 0.2s both;
+    }
+    .pati{
+        bottom: 65%;
+        left: -20%;
+        z-index: 1;
+        width: 120vw;
+        animation: slide-in 1s ;
+    }
+    .ran{
+        bottom: -5%;
+        left: 30%;
+        z-index: 5;
+        animation: slide-in 1s 1.2s both;
+    }
+    .hu{
+        bottom: 60%;
+        right: -30%;
+        z-index: 4;
+        animation: slide-in 1s 0.6s both;
+    }
+    .ten{
+        bottom: 30%;
+        right: 10%;
+        z-index: 4;
+        animation: slide-in 1s 0.8s both;
+    }
+    .kanizukan ul{
+        justify-content: space-around;
+    }
+    .kanizukan li{
+        width: 40%;
+    }
+
+
+    /*説明*/
+    #setumei .setumei_naka{
+        margin: 5%;
+    }
+    #setumei .setumei_naka{
+        display: block;
+    }
+    #setumei .setumei_naka h3{
+        margin: 0 auto;
+    }
+
+
+    /*カニ図鑑詳細*/
+    .zukan_syosai{
+    display: block;
+    }
+    .zukan_syosai h1{
+        text-align: center;
+        margin: auto;
+        width: 80%;
+    }
+
+    .zukan_syosai2{
+        text-align: center;
+        display: block;
+    }
+    .syosai_text{
+        text-align: left;
+        display: inline-block;
+        line-height: 1.5;
+    }
+    /*ステータス*/
+    .status{
+        display: block;
+    }
+    .status table{
+        margin: 5% auto;
+    }
+    .tokutyo{
+        margin-bottom: 1%;
+    }
+
+
+
+
+    @keyframes slide-in {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+    }
+    @keyframes slide-in2 {
+    0% {
+        transform: translateY(-300%);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+    }
+
+}

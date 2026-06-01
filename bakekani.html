@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="discription" content="ばけかにの図鑑情報が見れるページ">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>かに公式サイト｜ばけかに</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!--フォント-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+        <!--アイコン-->
+        <link rel="icon" href="img/favicon.ico">
+    </head>
+    <body>
+        <header class="header">
+            <!-- ヘッダーロゴ -->
+            <div class="logo"><a href="index.html"><img src="img/logo.svg" alt="ロゴ"></a></div>
+            <!-- ハンバーガーメニュー部分 -->
+            <div class="nav">
+                <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+                <input id="drawer_input" class="drawer_hidden" type="checkbox">
+                <!-- ハンバーガーアイコン -->
+                <label for="drawer_input" class="drawer_open"><span></span></label>
+                <!-- メニュー -->
+                <nav class="nav_content">
+                    <ul class="nav_list">
+                        <li><a href="index.html">トップ</a></li>
+                        <li><a href="list.html">カニ図鑑</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="zukan_bakekani">
+            <div class="zukan_syosai">
+                <h1>
+                    <img src="img/bakekani_2.gif" alt="ばけかに">
+                </h1>
+                <div class="zukan_syosai2">
+                    <h2>ばけかに</h2>
+                    <p class="syosai_text">
+                        かにの幽霊の姿<br>
+                        体は透けていて攻撃は当たらない<br>
+                        ただ光に弱い
+                    </p>
+                </div>
+            </div>
+            <div class="status">
+                <table class="tokutyo">
+                    <tr>
+                        <th colspan="2">かに分類</th><td colspan="2">しにがに</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">属性</th><td colspan="2">闇</td>
+                    </tr>
+                    <tr>
+                        <th>体長</th><td>1m</td><th>体重</th><td>0.0kg</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">生息地</th><td colspan="2">墓地</td>
+                    </tr>
+                </table>
+                <table class="bakekani">
+                    <tr>
+                        <th>攻撃</th> <td class="a-1">&emsp;</td> <td class="a-2">&emsp;</td> <td class="a-3">&emsp;</td> <td class="a-4">&emsp;</td> <td class="a-5">&emsp;</td> <td class="a-6">&emsp;</td>
+                    </tr>
+                    <tr>
+                        <th>防御</th> <td colspan="6">ダメージ無効</td>
+                    </tr>
+                    <tr>
+                        <th>速さ</th> <td class="s-1">&emsp;</td> <td class="s-2">&emsp;</td> <td class="s-3">&emsp;</td> <td class="s-4">&emsp;</td> <td class="s-5">&emsp;</td> <td class="s-6">&emsp;</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="zukan_btn">
+                <p class="mae"><a href="kyomukani.html">前のかに</a></p>
+                <p class="modoru"><a href="list.html">図鑑に戻る</a></p>
+                <p class="next"><a href="kaniko.html">次のかに</a></p>
+            </div>
+        </main>
+        <footer>
+            <copylight>&copy; 2026 かに</copylight>
+        </footer>
+    </body>
+</html>

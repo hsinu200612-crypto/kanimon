@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="discription" content="かに公式サイトお問い合わせページ">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>かに公式サイト｜お問い合わせ</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!--フォント-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+        <!--アイコン-->
+        <link rel="icon" href="img/favicon.ico">
+    </head>
+    <body>
+        <header class="header">
+            <!-- ヘッダーロゴ -->
+            <div class="logo"><a href="index.html"><img src="img/logo.svg" alt="ロゴ"></a></div>
+            <!-- ハンバーガーメニュー部分 -->
+            <div class="nav">
+                <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+                <input id="drawer_input" class="drawer_hidden" type="checkbox">
+                <!-- ハンバーガーアイコン -->
+                <label for="drawer_input" class="drawer_open"><span></span></label>
+                <!-- メニュー -->
+                <nav class="nav_content">
+                    <ul class="nav_list">
+                        <li><a href="index.html">トップ</a></li>
+                        <li><a href="list.html">カニ図鑑</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="contact">
+            <h2>お問い合わせ</h2>
+            <div class="form">
+                <form action="program.php" method="post">
+                    <dl>
+                        <dt><label for="your-name"><span class="must">必須</span>氏名</label></dt>
+                        <dd><input type="text" size="30" name="your-name" required placeholder="田中　太郎" id="your-name"></dd>
+                        <dt><label for="kana"><span class="must">必須</span>ふりがな</label></dt>
+                        <dd><input type="text" size="30" name="kana" required placeholder="たなか　たろう" id="kana"></dd>
+
+                        <dt><label for="email"><span class="must">必須</span>メールアドレス</label></dt>
+                        <dd><input type="email" size="30" name="email" required placeholder="kani@xxx.com" id="email"></dd>
+
+                        <dt><label for="tel">電話番号</label></dt>
+                        <dd><input type="tel" size="30" name="tel" placeholder="000-1234-5678" id="tel"></dd>
+
+                        <dt><label for="comment"><span class="must">必須</span>お問い合わせ内容</label></dt>
+                        <dd><textarea cols="30" rows="10" name="comment" required id="comment"></textarea></dd>
+                    </dl>
+                    <p><button type="submit" name="send">送信</button></p>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <copylight>&copy; 2026 かに</copylight>
+        </footer>
+    </body>
+</html>
